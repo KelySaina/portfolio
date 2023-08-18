@@ -118,7 +118,7 @@ export default function App() {
                 <Typography>
                   Let's check up on LinkedIn, Facebook, or WhatsApp for any eventual work and collaboration
                 </Typography>
-                <Typography sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Typography sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: { xs: 'column', lg: 'row' } }}>
                   <a href='https://www.linkedin.com/in/thierry-micha%C3%ABl-7b8a71251' style={{ textDecoration: 'none', color: 'blue' }} ><Typography style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', margin: 0.5 }}><LinkedInIcon /><Typography>Thierry Michael</Typography></Typography></a>
                   <a href='https://www.facebook.com/profile.php?id=100083407817568' style={{ textDecoration: 'none', color: 'blue' }}><Typography style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', margin: 0.5 }}><FacebookIcon /><Typography>Thierry Michael</Typography></Typography></a>
                   <a href='https://wa.me/261348835957?text=Hello' style={{ textDecoration: 'none', color: 'blue' }}><Typography style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', margin: 0.5 }}><WhatsAppIcon /><Typography>+261348835957</Typography></Typography></a>
