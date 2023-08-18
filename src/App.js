@@ -75,8 +75,8 @@ export default function App() {
         marginTop: '50px'
       }}>
         <CustomTabPanel value={value} index={0}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', marginLeft: '12px' }}>
-            <div style={{ width: '45%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+            <Typography sx={{ width: { lg: '45%', xs: '95%' } }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                 <Typography variant='h3'>
                   Hi! I am Thierry
@@ -121,13 +121,13 @@ export default function App() {
                 <Typography sx={{ display: 'flex', justifyContent: 'space-between' }}>
                   <a href='https://www.linkedin.com/in/thierry-micha%C3%ABl-7b8a71251' style={{ textDecoration: 'none', color: 'blue' }} ><Typography style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', margin: 0.5 }}><LinkedInIcon /><Typography>Thierry Michael</Typography></Typography></a>
                   <a href='https://www.facebook.com/profile.php?id=100083407817568' style={{ textDecoration: 'none', color: 'blue' }}><Typography style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', margin: 0.5 }}><FacebookIcon /><Typography>Thierry Michael</Typography></Typography></a>
-                  <a href='https://wa.me/261348835957' style={{ textDecoration: 'none', color: 'blue' }}><Typography style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', margin: 0.5 }}><WhatsAppIcon /><Typography>+261348835957</Typography></Typography></a>
+                  <a href='https://wa.me/261348835957?text=Hello' style={{ textDecoration: 'none', color: 'blue' }}><Typography style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', margin: 0.5 }}><WhatsAppIcon /><Typography>+261348835957</Typography></Typography></a>
                 </Typography>
               </Typography>
-            </div>
-            <div style={{ width: '45%' }}>
+            </Typography>
+            <Typography sx={{ width: '45%', display: { xs: 'none', lg: 'block' } }}>
               <img src='/me.jpg' alt='me' width='500px' height='500px' />
-            </div>
+            </Typography>
 
           </div>
         </CustomTabPanel>
@@ -137,7 +137,7 @@ export default function App() {
         <CustomTabPanel value={value} index={2}>
           Item Three
         </CustomTabPanel>
-      </div>
-    </Box>
+      </div >
+    </Box >
   );
 }
