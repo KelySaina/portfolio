@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:22' // Use a Node.js Docker image
+            args '-u root'  // Run as root to install dependencies
+        }
+    }
 
     environment {
         BUILD_DIR = 'build'
